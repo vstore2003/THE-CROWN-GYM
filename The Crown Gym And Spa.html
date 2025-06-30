@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crown Gym And Spa - Golden Special Monsoon Offer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#F5D37B',
+                            DEFAULT: '#FFD700',
+                            dark: '#D4AF37',
+                        },
+                        crown: {
+                            dark: '#1A1A1A',
+                            light: '#2D2D2D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+            scroll-behavior: smooth;
+        }
+        
+        .cinzel-font {
+            font-family: 'Cinzel', serif;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(26, 26, 26, 0.9) 30%, rgba(26, 26, 26, 0.5) 100%);
+            z-index: 1;
+        }
+        
+        .membership-card {
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .membership-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid gold;
+        }
+        
+        .special-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+            }
+        }
+        
+        .gold-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, gold, transparent);
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-crown-dark text-white">
+    <!-- Navigation -->
+    <nav class="sticky-nav bg-crown-dark border-b border-gold-light shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center mr-3">
+                    <i class="fas fa-crown text-2xl text-crown-dark"></i>
+                </div>
+                <h1 class="cinzel-font text-gold text-2xl font-bold">THE CROWN <span class="text-white">GYM AND SPA</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-white hover:text-gold transition">Home</a>
+                <a href="#membership" class="text-white hover:text-gold transition">Membership</a>
+                <a href="#contact" class="text-white hover:text-gold transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gold focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 bg-crown-dark shadow-lg py-4">
+                    <a href="#home" class="block px-4 py-2 text-white hover:text-gold transition">Home</a>
+                    <a href="#membership" class="block px-4 py-2 text-white hover:text-gold transition">Membership</a>
+                    <a href="#contact" class="block px-4 py-2 text-white hover:text-gold transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section relative bg-crown-dark text-white py-20">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative">
+                        <span class="special-badge cinzel-font absolute -top-8 -left-4 bg-gold text-crown-dark px-4 py-2 rounded-full font-bold text-sm">MONSOON SPECIAL</span>
+                        <h2 class="cinzel-font text-4xl md:text-6xl font-bold mb-4 text-gold">EXCLUSIVE <span class="text-white">OFFERS</span></h2>
+                        <div class="gold-divider my-6"></div>
+                        <p class="text-lg mb-8">Experience luxury fitness at The Crown Gym And Spa with our special monsoon membership plans. Elevate your wellness journey with premium facilities and personalized attention.</p>
+                        <a href="#membership" class="bg-gold text-crown-dark font-bold py-3 px-8 rounded-full hover:bg-gold-dark transition inline-block">VIEW PLANS</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3eec2c57-92ce-470d-a54a-97b82540f468.png" alt="Premium 24/7 luxury gym facility with modern equipment" class="rounded-lg shadow-2xl border-4 border-gold">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="py-16 bg-crown-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">MEMBERSHIP <span class="text-white">PLANS</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+                <p class="text-gray-300">Choose the perfect plan for your fitness journey with our monsoon special offers</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <!-- Men's Membership -->
+                <div class="membership-card bg-crown-dark rounded-lg overflow-hidden shadow-lg flex-1 max-w-md">
+                    <div class="bg-black py-4 px-6">
+                        <h3 class="cinzel-font text-2xl font-bold text-center text-gold">MEN'S MEMBERSHIP</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center py-3 border-b border-gold-light">
+                                <span class="text-gray-300">3 MONTHS</span>
+                                <span class="cinzel-font text-xl font-bold text-gold">₹3500</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-gold-light">
+                                <span class="text-gray-300">6 MONTHS</span>
+                                <span class="cinzel-font text-xl font-bold text-gold">₹6000</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3">
+                                <span class="text-gray-300">1 YEAR</span>
+                                <span class="cinzel-font text-2xl font-bold text-gold">₹11000</span>
+                            </div>
+                        </div>
+                        <ul class="mb-8 space-y-3 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Access to all gym equipment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Group fitness classes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Locker facilities</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Personal trainer consultation</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gold text-crown-dark font-bold py-3 rounded-full hover:bg-gold-dark transition">SELECT PLAN</button>
+                    </div>
+                </div>
+
+                <!-- Women's Membership -->
+                <div class="membership-card bg-crown-dark rounded-lg overflow-hidden shadow-lg flex-1 max-w-md">
+                    <div class="bg-black py-4 px-6">
+                        <h3 class="cinzel-font text-2xl font-bold text-center text-gold">WOMEN'S MEMBERSHIP</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center py-3 border-b border-gold-light">
+                                <span class="text-gray-300">3 MONTHS</span>
+                                <span class="cinzel-font text-xl font-bold text-gold">₹2700</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-gold-light">
+                                <span class="text-gray-300">6 MONTHS</span>
+                                <span class="cinzel-font text-xl font-bold text-gold">₹4500</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3">
+                                <span class="text-gray-300">1 YEAR</span>
+                                <span class="cinzel-font text-2xl font-bold text-gold">₹8000</span>
+                            </div>
+                        </div>
+                        <ul class="mb-8 space-y-3 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Access to all gym equipment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Women-only group classes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Private locker facilities</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-gold mr-2"></i>
+                                <span>Women's spa access</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gold text-crown-dark font-bold py-3 rounded-full hover:bg-gold-dark transition">SELECT PLAN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-16 bg-crown-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">PREMIUM <span class="text-white">FACILITIES</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-crown-light rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9cd609a8-299a-466f-80a2-1ebeb511f6af.png" alt="Professional weight training area with premium equipment" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-3 text-gold">STRENGTH ZONE</h3>
+                        <p class="text-gray-300">Top-notch weight training equipment with personal trainer assistance</p>
+                    </div>
+                </div>
+                <div class="bg-crown-light rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/84cc997c-d76f-485c-9763-6a90803ff92e.png" alt="Modern cardio equipment with panoramic views" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-3 text-gold">CARDIO LOUNGE</h3>
+                        <p class="text-gray-300">State-of-the-art cardio machines with entertainment systems</p>
+                    </div>
+                </div>
+                <div class="bg-crown-light rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5cd96c1a-1d39-45e8-b307-0b7fe7b7d250.png" alt="Luxurious spa and relaxation area" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-3 text-gold">SPA & WELLNESS</h3>
+                        <p class="text-gray-300">Premium spa services including massage, sauna, and steam rooms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-crown-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">PREMIUM <span class="text-white">FEATURES</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-clock text-xl text-crown-dark"></i>
+                    </div>
+                    <div>
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">24/7 ACCESS</h3>
+                        <p class="text-gray-300">Your gym is open round the clock to fit your schedule</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-water text-xl text-crown-dark"></i>
+                    </div>
+                    <div>
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">WEEKEND STEAM</h3>
+                        <p class="text-gray-300">Exclusive steam room access every Saturday</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-trophy text-xl text-crown-dark"></i>
+                    </div>
+                    <div>
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">TRAINER CHALLENGES</h3>
+                        <p class="text-gray-300">Monthly fitness challenges with prizes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="py-16 bg-crown-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">OUR <span class="text-white">TRAINERS</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-crown-dark rounded-lg overflow-hidden shadow-lg text-center">
+                    <img src="./SAHIB.jpg" alt="Certified personal trainer John Smith" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">SAHIB SINGH</h3>
+                        <p class="text-gold-light mb-3">Strength & Conditioning</p>
+                        <p class="text-gray-300">4+ years experience with professional athletes</p>
+                    </div>
+                </div>
+                <div class="bg-crown-dark rounded-lg overflow-hidden shadow-lg text-center">
+                    <img src="./HONEY.jpg" alt="Certified personal trainer Sarah Lee" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">HONEY</h3>
+                        <p class="text-gold-light mb-3">Yoga & Pilates</p>
+                        <p class="text-gray-300">Specialized in rehabilitation and mobility training</p>
+                    </div>
+                </div>
+                <div class="bg-crown-dark rounded-lg overflow-hidden shadow-lg text-center">
+                    <img src="./LUCKY.jpg" alt="Certified personal trainer Mike Johnson" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">LUCKY</h3>
+                        <p class="text-gold-light mb-3">Functional Training</p>
+                        <p class="text-gray-300">Expert in HIIT and weight loss programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Section -->
+    <section class="py-16 bg-crown-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">OUR <span class="text-white">MANAGEMENT TEAM</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-crown-light rounded-lg overflow-hidden shadow-lg text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5032566b-ac6a-4aac-993b-5f3fa28e259a.png" alt="Gym Manager" class="w-full">
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">PARDEEP SHARMA</h3>
+                        <p class="text-gold-light mb-3">General Manager</p>
+                        <p class="text-gray-300">15+ years experience in fitness club management</p>
+                    </div>
+                </div>
+                <div class="bg-crown-light rounded-lg overflow-hidden sh                    adow-lg text-center">
+<!-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/17d84011-79ee-49b0-8f49-1689e837aff7.png" alt="Head Receptionist" class="w-full"> -->
+                    <div class="p-6">
+                        <h3 class="cinzel-font text-xl font-bold mb-2 text-gold">PRIYA </h3>
+                        <p class="text-gold-light mb-3">Head Receptionist</p>
+                        <p class="text-gray-300">Available daily to assist with memberships and queries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-crown-dark">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-6 text-gold">VISIT OUR GYM NOW</h2>
+            <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            <p class="text-xl mb-8 text-gray-300">Experience the luxury of fitness at The Crown Gym And Spa</p>
+            <a href="#contact" class="bg-gold text-crown-dark font-bold py-3 px-8 rounded-full hover:bg-gold-dark transition inline-block">GET DIRECTIONS</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-crown-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="cinzel-font text-3xl md:text-4xl font-bold mb-4 text-gold">CONTACT <span class="text-white">US</span></h2>
+                <div class="gold-divider mx-auto my-6 w-1/2"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="bg-crown-dark rounded-lg p-8 shadow-lg">
+                        <h3 class="cinzel-font text-xl font-bold mb-4 text-gold">OUR LOCATION</h3>
+                        <p class="mb-4">SCO 114, 1st, 2nd & 3rd Floor, Phase II, Urban Estate, Patiala, Punjab.</p>
+                        <div class="mb-6 rounded-lg overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.089284912388!2d76.3708646147716!3d30.692980347462033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f94a1355a9a5f%3A0x1b5e18223c6b06e8!2sUrban%20Estate%2C%20Patiala%2C%20Punjab%20147001!5e0!3m2!1sen!2sin!4v1691564812822!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <h3 class="cinzel-font text-xl font-bold mb-4 text-gold">CONTACT NUMBERS</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-gold-light flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-crown-dark"></i>
+                                </div>
+                                <span>62845-12412</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-gold-light flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-crown-dark"></i>
+                                </div>
+                                <span>98554-90359</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-gold-light flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-crown-dark"></i>
+                                </div>
+                                <span>93560-88544</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-crown-dark rounded-lg p-8 shadow-lg">
+                        <h3 class="cinzel-font text-xl font-bold mb-4 text-gold">OPERATING HOURS</h3>
+                        <div class="mb-6 text-gray-300">
+                            <p class="flex items-center mb-2"><i class="fas fa-clock text-gold mr-3"></i> Open 24/7</p>
+                            <p class="flex items-center"><i class="fas fa-calendar-alt text-gold mr-3"></i> Weekend Steam Services (Saturday only)</p>
+                        </div>
+                        <h3 class="cinzel-font text-xl font-bold mb-4 text-gold">JOIN NOW</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Your Name" class="w-full bg-crown-light border border-gold-light rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Your Email" class="w-full bg-crown-light border border-gold-light rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <input type="tel" placeholder="Your Phone" class="w-full bg-crown-light border border-gold-light rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <select class="w-full bg-crown-light border border-gold-light rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent">
+                                    <option>Select Membership Plan</option>
+                                    <option>Men's 3 Months - ₹3500</option>
+                                    <option>Men's 6 Months - ₹6000</option>
+                                    <option>Men's 1 Year - ₹11000</option>
+                                    <option>Women's 3 Months - ₹2700</option>
+                                    <option>Women's 6 Months - ₹4500</option>
+                                    <option>Women's 1 Year - ₹8000</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-gold text-crown-dark font-bold py-3 rounded-full hover:bg-gold-dark transition">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center mr-3">
+                        <i class="fas fa-crown text-crown-dark"></i>
+                    </div>
+                    <span class="cinzel-font text-gold text-xl font-bold">THE CROWN GYM AND SPA</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="gold-divider my-6"></div>
+            <div class="text-center text-gray-500 text-sm">
+                <p>&copy; 2023 The Crown Gym And Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                menuButton.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                    '<i class="fas fa-bars text-2xl"></i>' : 
+                    '<i class="fas fa-times text-2xl"></i>';
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
